@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let arrnum = [2, 6, 23, 34, 45, 7, 9, 10, 0, 11];
+    let arra = arrnum[0];
+    for (i = 0; i < arrnum.length; i++) {
+        for (j = 0; j < arrnum.length; j++) {
+            if (arrnum [j + 1] > arrnum [j]) {
+                arra = arrnum [j + 1];
+                arrnum [j + 1] = arrnum [j];
+                arrnum [j] = arra;
+            }
+        }
+    }
+    document.write(arrnum);
+</script>
 </body>
 </html>
