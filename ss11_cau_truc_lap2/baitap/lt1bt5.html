@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = 0;
+    let n1 = 1;
+    let sum = 0;
+    let count = 0;
+    for (let i = 0; ; i++) {
+        let nextnum;
+        nextnum = n + n1;
+        n = n1;
+        n1 = nextnum;
+        sum = sum + nextnum;
+        count++;
+        if (count > 20) {
+            break;
+        }
+    } document.write("sum "+ sum);
+</script>
+</body>
+</html>

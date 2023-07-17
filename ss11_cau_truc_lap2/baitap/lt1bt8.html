@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="play()">play game</button>
+;
+<script>
+    function play() {
+        let canduoi = +prompt("nhập cận dưới :");
+        let cantren = +prompt("nhập cận trên : ");
+        let ramdom = Math.round(Math.ramdom()) * (cantren - canduoi) + (canduoi);
+        console.log(ramdom);
+        let colan = 1;
+        do {
+            let so = +prompt("nhập số đoán của bạn");
+            if (so === ramdom) {
+                alert("bạn đã nhập đúng");
+
+            } else if (so < ramdom) {
+                alet("bạn cần nhập số lớn hơn");
+            } else {
+                alert("bạn cần nhập số bé hơn");
+            }
+            if (solan === 3) {
+                alert("lượt chơi của bạn đã kết thúc");
+            }solan++;
+        } while (solan <= 3);
+
+    }
+
+</script>
+</body>
+</html>

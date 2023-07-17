@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     let n1 = 0;
+     let n2 = 1;
+     document.write(n1 + "<br/>");
+     document.write(n2 + "<br/>");
+     do {
+         let nextnum ;
+         nextnum = n1 + n2;
+         document.write(nextnum + "<br/>");
+         n1 = n2 ;
+         n2 = nextnum ;
+         if (nextnum > 5000){
+             break;
+         }
+     } while (true)
+ </script>
+</body>
+</html>

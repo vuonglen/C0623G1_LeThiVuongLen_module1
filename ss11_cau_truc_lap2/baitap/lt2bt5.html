@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let tien = +prompt("nhập tiền");
+   let thoigian = +prompt("nhập thời gian");
+   let lai = +prompt("nhập lãi");
+   let tong = (tien * lai);
+for ( let i =1 ;i <=thoigian ; i++) {
+    tong  = tong *  (1 + lai);
+}
+    document.write ("số tiền nhận được là :" +tong+ "đ");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="tudien" id="string">
+<button type="text" onclick="dich()">Dịch</button>
+<p id="result"></p>
+<script>
+    function dich() {
+        let arr_english = ["hello", "class", "apple", "smile", "sad"];
+        let arr_vietnam = ["xin chào", "lớp học", "quả táo", "cười", "buồn"];
+        let string = document.getElementById("string").value;
+        let eng = 0;
+        let result = "";
+        for (let i = 0; i < arr_english.length; i++) {
+            if (arr_english[i] === string) {
+                eng = i;
+                for (let j = 0; j < arr_vietnam.length; j++) {
+                    if (eng === j) {
+                        result = arr_vietnam[j];
+                    }
+                }
+            }
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+
+
+</body>
+</html>

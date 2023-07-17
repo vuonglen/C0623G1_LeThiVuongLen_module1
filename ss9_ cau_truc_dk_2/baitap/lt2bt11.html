@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tn = +prompt("nhập tn");
+    if (tn<= 5000000){
+        document.write("thuế phải nộp" + (tn* 5/100));
+    }else if (tn<=10000000){
+        document.write("thuế phải nộp"+ (tn*10/100));
+    } else
+        document.write("thuế phải nộp" + (tn*15/100));
+</script>
+</body>
+</html>

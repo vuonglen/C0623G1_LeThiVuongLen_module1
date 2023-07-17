@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phut = +prompt ("nhập số phút ");
+    let ptb = 25000;
+    if (phut <= 60 ) {
+        document.write("số tiền phải trả :" + (ptb + 500 * phut));
+    } else if ( phut <= 100){
+        document.write("số tiền phải trả :"+ (ptb +300*(phut-60)+(500*60)));
+    }else
+        document.write("số tiền phải trả :"+ (ptb +200*(phut-100)+(500*60)+(300*(100-60))));
+</script>
+</body>
+</html>

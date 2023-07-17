@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Amount</h3>
+<input type="amount" id="amount" value>
+<button onclick="result()">convert</button></br>
+<h3>Amount</h3>
+<input type="amount" id="amount1" value>
+<button onclick="alert()">convert</button>
+<p id="result"></p>
+<p id="answer"></p>
+<script>
+    function result() {
+        let nhap = document.getElementById("amount").value;
+        let vnd = parseInt(nhap) * 23000;
+        document.getElementById("result").innerText =("VND: " +vnd);
+    }
+    function alert() {
+        let chon = document.getElementById("amount1").value;
+        let usd = parseInt(chon) / 23000;
+        document.getElementById("answer").innerText =("USD: " + usd);
+    }
+</script>
+
+</body>
+</html>

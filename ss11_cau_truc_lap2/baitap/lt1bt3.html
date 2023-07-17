@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = 0;
+    let n1 = 1;
+    document.write(n + "</br>");
+    document.write(n1 + "</br>");
+    for (let i = 0; i < 18; i++) {
+        let nextnum;
+            nextnum = n + n1;
+            document.write(nextnum + "</br>" );
+            n = n1;
+            n1 = nextnum;
+        }
+</script>
+</body>
+</html>

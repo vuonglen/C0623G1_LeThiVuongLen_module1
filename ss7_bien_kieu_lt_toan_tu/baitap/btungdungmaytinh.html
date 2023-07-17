@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="numberA" value>
+<input type="number" id="numberB" value>
+<button onclick="tong()">+</button>
+<button onclick="hieu()">-</button>
+<button onclick="thuong()">/</button>
+<button onclick="tich()">*</button>
+<p id="result"></p>
+<script>
+    function tong() {
+        let a = document.getElementById("numberA").value;
+        let b = document.getElementById("numberB").value;
+        let tong = parseInt(a) + parseInt(b);
+        document.getElementById("result").innerText = ("Tổng: " + tong);
+    }
+
+    function hieu() {
+        let a = document.getElementById("numberA").value;
+        let b = document.getElementById("numberB").value;
+        let hieu = parseInt(a) - parseInt(b);
+        document.getElementById("result").innerText = ("Tổng: " + hieu);
+    }
+
+    function thuong() {
+        let a = document.getElementById("numberA").value;
+        let b = document.getElementById("numberB").value;
+        let thuong = parseInt(a) / parseInt(b);
+        document.getElementById("result").innerText = ("Tổng: " + thuong);
+    }
+
+    function tich() {
+        let a = document.getElementById("numberA").value;
+        let b = document.getElementById("numberB").value;
+        let tich = parseInt(a) * parseInt(b);
+        document.getElementById("result").innerText = ("Tổng: " + tich);
+    }
+
+</script>
+</body>
+</html>

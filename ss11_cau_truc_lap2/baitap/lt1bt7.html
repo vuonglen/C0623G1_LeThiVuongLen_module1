@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num ;
+    do {
+        num = +prompt ("nhập num ");
+        if (num % 3===0 && num % 5===0){
+            alert ("fizzbuzz");
+        }else if (num %3===0){
+            alert ("fizz");
+        }else if (num % 5===0){
+            alert ("buzz")
+        }
+    }while (num < 100);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = +prompt("nhập tiền ");
+    let month = +prompt ("nhập month");
+    if (month>=12){
+        document.write("tiền lãi :"+ (money*7.3/100));
+    }else if (month>=6){
+        document.write("tiền lãi" + (money*7/100));
+    }else if (month>=3){
+        document.write("tiền lãi :"+ (money*4.7/100));
+    }else
+        document.write("tiền lãi :" + (money*4.5/100));
+</script>
+</body>
+</html>
