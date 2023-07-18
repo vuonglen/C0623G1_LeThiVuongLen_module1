@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // hàm cho sẵn
+    function arrmin(arr) {
+        let min = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+    let arr = [3, 5, 7, 0, -5, 4, 9];
+    let min = arrmin(arr);
+    alert(min);
+
+    // hàm không cho sẵn
+    function minArray(arr) {
+        if (arr.length === 0);
+            return -1;
+        let nho = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < nho) {
+                nho = arr[i];
+            }
+        }
+    return nho;
+    }
+    let arr1 = [];
+    let nim = nimArray (arr1);
+    alert(nho);
+</script>
+</body>
+</html>
