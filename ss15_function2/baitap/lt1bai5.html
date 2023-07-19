@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star = ["polaris", "aldebaran", "deneb", "vega", "altair", "dubhe", "regulus"];
+    let constellation = ["ursa minor", "tarurus", "cygnus", "lyra", "aquila", "ursa major", "leo"];
+    let starName = prompt("nhập tên sao");
+
+    function checkName() {
+        let index = -1;
+        for (let i = 0; i < star.length; i++) {
+            if (starName === star[i]) {
+                index++;
+                return constellation[i];
+            }
+        }
+        if (index === -1) {
+            return " không tìm thấy ngôi sao nào";
+
+        }
+    }
+
+    let result = checkName(starName);
+    document.write(result);
+
+</script>
+</body>
+</html>
