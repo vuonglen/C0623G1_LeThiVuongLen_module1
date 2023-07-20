@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(doC) {
+            this.doC = doC ;
+        }
+        setDoC(newDoC){
+            this.doC = newDoC;
+         }
+         getDoF(){
+            return "độ C sang độ F:" +((this.doC *1.8) + 32);
+         }
+         getKevin(){
+            return "độ C sang độ kevin:"+ (this.doC + 273.15);
+         }
+    }
+    let temperature = new Temperature(25);
+    document.write(temperature.getDoF() +"</br>" + temperature.getKevin());
+</script>
+</body>
+</html>

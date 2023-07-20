@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<button type="text" onclick="messenger()">messenger</button>-->
+<!--<button type="text" onclick="messengerTo()">messengerTo</button>-->
+
+<script>
+    class Mobile {
+        constructor(name, battery, draft, inbox, outbox, status) {
+            this.name = name;
+            this.battery = battery;
+            this.draft = draft;
+            this.inbox = inbox;
+            this.outbox = outbox;
+            this.status = status;
+        }
+
+        checkstatus() {
+            if (this.status) {
+                console.log(this.name, "the mobile is on");
+            } else {
+                console.log(this.name, "the mobile is off");
+            }
+            this.battery--;
+        }
+
+        turnOn() {
+            if (this.status) {
+                console.log(this.name, "phone is on");
+            } else {
+                this.status = true;
+                this.battery--;
+            }
+        }
+
+        turnOff(){
+            if (this.status) {
+                console.log(this.name, "need to turn on the phone");
+            } else {
+                this.status = false ;
+                this.battery--;
+            }
+        }
+
+        setBattery(newBattery){
+            this.battery = newBattery;
+        }
+        setMessageDraft(message){
+            if(this.status){
+                this.draft.unshift(message);
+                this.battery--;
+            }else {
+                console.log("phone is off");
+            }
+        }
+
+        sendMessage(message,otherMobile){
+            if(this.status){
+                this.outbox.unshift(message);
+                otherMobile.inbox.unshift(message);
+                this.battery--;
+            }else {
+                console.log(this.name, "phone is off");
+            }
+        }
+    }
+
+    let nokia = new Mobile("Nokia",[],[],[],false);
+    let iphone = new Mobile("iphone14 pro",[],[],[],false);
+    nokia.turnOn()
+    iphone.turnOn()
+
+</script>
+</body>
+</html>
