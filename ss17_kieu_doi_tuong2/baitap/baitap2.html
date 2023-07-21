@@ -13,13 +13,13 @@
 
         turnOn() {
             this.status = true;
-                document.write("Lighting"+"<br/>");
-            }
+            document.write("Lighting"+"<br/>");
+        }
 
-            turnOff(){
-                this.status = false;
-                document.write("Not lighting");
-            }
+        turnOff(){
+            this.status = false;
+            document.write("Not lighting");
+        }
 
     }
     class SwitchButton {
@@ -43,10 +43,10 @@
 
     let electricLamp = new ElectricLamp(false);
     let switchButton = new SwitchButton(false, electricLamp);
-        switchButton.switchOn();
-        electricLamp.turnOn();
-        switchButton.switchOff();
-        electricLamp.turnOff();
+    switchButton.switchOn();
+    electricLamp.turnOn();
+    switchButton.switchOff();
+    electricLamp.turnOff();
 
 </script>
 </body>
