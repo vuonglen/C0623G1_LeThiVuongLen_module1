@@ -14,6 +14,9 @@
         setWeightApple(newWeightApple) {
             this.getWeight = newWeightApple;
         }
+        decreaseApple() {
+            this.getWeight--;
+        }
 
         isEmpty() {
             if (this.getWeight <= 0){
@@ -22,15 +25,7 @@
                 return false;
             }
         }
-
-        decreaseApple() {
-            if (this.isEmpty()) {
-                alert("Táo đã hết rồi");
-            } else {
-                this.getWeight--;
-            }
-        }
-
+        
         getWeightApple() {
             return this.getWeight;
         }
