@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        constructor(weightApple) {
+            this.weight = weightApple;
+        }
+        setWeightApple(newWeightApple){
+            this.weightApple = newWeightApple;
+    }
+
+    isEmpty(){
+        if (this.weightApple <= 0) {
+            return  false;
+        }else {
+            return  true;
+        }
+    }
+        decreaseApple(){
+            if(this.isEmpty()){
+                alert("Táo đã hết rồi");
+            }else {
+                this.weightApple--;
+            }
+        }
+
+        getWeightApple(){
+            return this.weightApple;
+    }
+    }
+    class Human {
+        constructor(name, gender, weightHuman) {
+            this.name = name;
+            this.gender = gender;
+            this.weightHuman = weightHuman;
+        }
+        isMale() {
+            if (this.gender = nam){
+               return  true;
+            }else{
+                return  false;
+            }
+        }
+    setGender(newGender){
+            this.gender = newGender;
+    }
+    checkApple(apple){
+            if (apple.isEmpty()){
+                return true;
+            }else{
+                return false;
+            }
+
+    }
+    say(string){
+            console.log (string)
+    }
+    eat(apple){
+         if (apple.getWeightApple() >0){
+             apple.decreaseApple();
+             this.weightHuman++;
+         }else{
+             console.log("táo đã hết");
+         }
+        }
+        setName(newName){
+            this.Name = newName;
+        }
+        getName(){
+            return this.name;
+        }
+        setWeightHuman(newWeightHuman) {
+            this.weightHuman = newWeightHuman;
+        }
+        getWeightHuman(){
+            return this.weightHuman;
+        }
+    }
+    let apple1 = new Apple(10);
+    let adam  = new Human("adam" , "nam" , "60 ");
+    let eva = new Human ("eva", "nữ", "47");
+    adam.say("i am Adam");
+
+   
+</script>
+</body>
+</html>
